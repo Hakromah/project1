@@ -1,0 +1,770 @@
+*, html
+{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    height: 3500px;
+}
+
+header{
+
+    height: 112px;
+    line-height: 112px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+/*--TO HIDE HEADER BACKG COLOR WHILE PAGE IS CROLL & APEARS WHILE SCROLL DOWN go to JS windows section to complete--*/
+
+.secondary{
+    background-color: darkcyan;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s ease-in;
+
+
+}
+
+
+ ul
+ {
+     list-style: none;
+ }
+
+ ul li{
+     display: inline-block
+ }
+
+ header nav{
+     float: right;
+ }
+
+ .row, .logo, img{
+    margin-top: 0px;
+    margin-bottom: 6px;
+
+ }
+
+ header nav ul li a{
+     padding-right: 30px;
+     font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.5s ease-in;
+}
+
+header nav ul li a:hover{
+color:rgba(194, 12, 12, 0.938);
+}/*--SLIDER BACKGROUND IMAGES*/
+.img1
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.712)), url(..//image/conakry.jpg);
+    background-size: 100%  100%;
+}
+
+.slider, .slider ul, .slider ul li
+{
+   height:700px;
+   width: 100%;
+   color: white;
+   text-align: center;
+}
+
+.slider h2{
+    font-weight: bold;
+    margin-top: 270px;
+}
+.slider span{
+    color: orange;
+}
+
+.slider a{
+    padding: 10px 40px;
+    margin-right: 10px;
+
+}
+.slider a.btn-half{
+    background-color: rgb(0, 89, 255);
+    color: white;
+}
+
+.slider a.btn-half:hover
+{
+    opacity: 0.7;
+    background-color: deepskyblue;
+    transition: 0.5s ease-in;
+}
+
+.slider a.btn-full{
+    background-color: rgb(255, 166, 0);
+    color:white;
+}
+
+.slider a.btn-full:hover
+{
+    opacity: 0.7;
+    background-color: darksalmon;
+    transition: 0.5s ease-in;
+    
+}
+
+
+.img2
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.342),rgba(0, 0, 0, 0.425)), url(..//image/dubai1.jpg);
+    background-size: 100%  100%;
+}
+
+.img3
+{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.521),rgba(0, 0, 0, 0.582)), url(..//image/istanbul1.jpg);
+    background-size: 100%  100%;
+}
+.img4{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.522), rgba(0, 0, 0, 0.583)), url(..//image/antalya.jpg);
+    background-size: 100% 100%;
+}
+
+
+.slider  i{
+    padding-right: 10px;
+    font-size: 35px;
+}
+
+
+/*--SECOND PAGE STYLING--*/
+
+.intro-area{
+    position: relative;
+    padding:100px 0px;
+    text-align: center;
+
+}
+
+.sub-heading{
+    position: relative;
+    margin-bottom: 75px;
+}
+
+.intro-area .sub-heading p{
+      color: black;
+
+
+}
+/*--LINE UNDER THE .sub-heading*/
+.sub-heading:before{
+    
+    content:"";
+    position: absolute; 
+    top:100%;
+    left: 50%;
+    margin-left: -10%;
+    width: 6%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    -webkit-transition: 0.3s  ease;
+    -moz-transition: 0.3s  ease;
+    -ms-transition: 0.3s  ease;
+    -o-transition: 0.3s  ease;
+    transition: 0.3s  ease;
+   
+}
+
+.sub-heading:hover:before{
+    width: 15%;
+    margin-left:-10px;
+
+}
+
+.sub-heading:hover:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.2px;
+    width: 24%;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p{
+    color: #818181;
+    display: inline-block;
+    padding: 0.1px 0.1px 20px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+
+.intro-block{
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 45px 0.01px 0.01px;
+    text-align: center;
+    padding: 70px 25px 40px;
+}
+
+.intro-block:hover, .intro-block.active{
+    background: #08b8f3;
+}
+
+.intro-block:hover{
+    transition: 0.6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    -ms-transition: 0.6s ease;
+   
+}
+/*--For the Icons*/
+.intro-block .intro-icon{
+    position: absolute;
+    top: -31px;
+    left: 50%;
+    margin-left: -31px;
+}
+
+.intro-block .fa{
+    width: 63px;
+    height: 63px;
+    font-size: 30px;
+    line-height: 2;
+    background: deepskyblue;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 10px #cceef9;
+
+}
+
+.intro-block:hover  .fa, .intro-block.active .fa{
+    background:white;
+    color: deepskyblue;
+    box-shadow: 0px 0px 0px 10px deepskyblue;
+}
+
+.intro-block h3{
+    font-size: 18px;
+    color: deepskyblue;
+    font-size: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin-bottom: 15px;
+
+}
+
+.intro-block p{
+    color: gray;
+}
+
+.intro-block:hover h3, .intro-block:hover p{
+    color: #f6f6f6;
+} 
+/*--FOR BACKGROUND--*/
+.feature-area{
+    background-image:linear-gradient(rgba(34, 31, 31, 0.918), rgba(20, 18, 18, 0.897)), url(../image/newk.jpg);
+    background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+}
+
+.feature-area .sub-heading p{
+    color:white;
+}
+
+.feature-area h2{
+    color: white;
+}
+.single-feature, h3{
+    color: #f3f3f3;
+}
+/*--TO DIVID IT TO 4 PARTS--*/
+.single-feature{
+    position: relative;
+    margin-bottom: 20px;
+    width: 325px;
+    float: left;
+    padding: 30px  0;
+    text-align: center;
+    border-right: 1PX solid #65c8e5;
+    border-bottom: 1px solid #65c8e5;
+   transition: .3s ease;
+   -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+}
+
+/*--FOR HOVER ON THE STUDIO CLASSES--*/
+.feature-block :after{
+    content:"";
+    display: table;
+}
+
+
+.feature-block:after{
+    clear:both,
+}
+/*--ICONS*/
+.feature-icon{
+    display: inline-block;
+    margin-bottom: 20px;
+    border: 2px solid #f3f3f3;
+    width: 64px;
+    height: 64px;
+    font-size: 30px;
+    line-height: 2;
+    background: deepskyblue;
+    border-radius: 50%;
+   transition: .3s ease;
+   -webkit-transition: .3s ease;
+   -moz-transition: .3s ease;
+   -o-transition: .3s ease;
+   -ms-transition: .3s ease;
+}
+/*--HOVER FOR THE ICONS*/
+.single-feature:hover .feature-icon{
+    border: 2px solid #00a7dd;
+    background-color: white;
+    color: deepskyblue;
+}
+
+/*--TO REMOVE THE RIGHT & BOTTOM LINES*/
+.single-feature:nth-of-type(even){
+    border-right: none;
+}
+/*--TO REMOVE BORDER BOTTOM--*/
+.single-feature:nth-last-child(2){
+    border-bottom: none;
+}
+
+.single-feature:last-child{
+    border-bottom: none;
+}
+
+.feature-mockupp{
+    bottom:-21px;
+    position: relative;
+    
+}
+
+/*--ANOTHER SECTION--*/
+#good-job{
+    font-weight: 700;
+    padding: 100px 0;
+}
+
+.good-job .tilte p{
+    color:#616161;
+}
+
+.sub-heading:before{
+    
+    content:"";
+    margin-top: 0em;
+    align-items: center;
+    position: absolute; 
+    top:100%;
+    left: 50%;
+    margin-left: -10%;
+    width: 8%;
+    height: 1px;
+    background-color: deepskyblue;
+    z-index: 1;
+    transition: 0.3s  ease;
+    -webkit-transition: 0.3s  ease;
+    -moz-transition: 0.3s  ease;
+    -ms-transition: 0.3s  ease;
+    -o-transition: 0.3s  ease;
+}
+
+.sub-heading:hover:before{
+    width: 15%;
+    margin-left: 10%;
+}
+
+.sub-heading:hover:after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -0.2px;
+    width: 24%;
+    height: 1px;
+    background-color: #e1e1e1;
+}
+
+.sub-heading p{
+    color: #616161;
+    display: inline-block;
+    padding: 0.1px 0.1px 20px;
+    position: relative;
+    line-height: 20px;
+    letter-spacing: 0.025em;
+}
+
+/*--FOUTH PAGE ICON AND ITS DEFINATATIONS START FROM future-list BCZ ITS CONTAINS EVERYTHING--*/
+.future-list ul{
+    list-style: none;
+}
+
+.future-list li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+
+.future-list li:hover i{
+    color: white;
+    background:#00a7dd;
+    transition: .5s ease;  
+    -webkit-transition: .5s ease;  
+    -moz-transition: .5s ease;  
+    -o-transition: .5s ease;  
+    -ms-transition: .5s ease; 
+}
+
+/*--Now Lets Work For the ICONS Specifically--*/
+.future-icon{
+    position: absolute;
+    left: 0;
+}
+
+.future-icon i{
+    width: 63px;
+    height: 63px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    color: rgb(43, 0, 255);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 149, 255);
+    line-height: 63px;
+}
+
+.future-details h3{
+    color: deepskyblue;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.future-details p{
+    color: #616161;
+    font-weight: 200;
+}
+
+.future-image{
+    margin-left: -95px;
+}
+
+/*--FOR TESTIMONIAL PAGE--*/
+
+.testimonials{
+    background-image: linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,0.7)), url(..//image/dubai1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    color: white;
+    margin-top: -150px;
+
+}
+
+.testimonials .carousel-indicators{
+    bottom: -60px;
+
+}
+.testimonials .sub-heading p{
+    color: white;
+}
+
+/*--LETS EDIT  THE IMAGE--*/
+
+.carousel-inner img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: 2px solid deepskyblue;
+    padding: 5px;
+
+}
+
+/*--WORK ON THE INDICATORS--*/
+
+.testimonials .carousel-indicators li.active{
+    background-color: deepskyblue;
+}
+
+.testimonials, .carousel-indicators li{
+    border: deepskyblue;
+}
+
+.team-area{
+    margin:100px 0;
+    
+}
+
+.team-area .title h2{
+    color:#161515;
+}
+
+.team-area  .title p{
+    color: #616161;
+}
+
+.team-area .sub-heading{
+    margin-bottom: 100px;
+
+}
+.team-man{
+    position: absolute;
+    left:100%;
+    margin-left: -195px;
+    top: -100px;
+    overflow: hidden;
+    min-height: 40px;
+    height: 150px;
+    min-width: 40px;
+    border: 10px solid deepskyblue;
+    border-radius: 50%;
+    margin-right: 60px;
+}
+
+.team-man img{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    border-radius: 50%;
+
+}
+
+.team-block h3{
+    color: deepskyblue;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 70px;
+    margin-bottom: 5px;
+    
+}
+
+.team-block span{
+    color: #6c6c6c;
+    font-size: 16px;
+    text-transform: capitalize;
+    letter-spacing: 0.025em;
+}
+.team-block p{
+    color: dimgray;
+    font-size: 14px;
+    padding: 25px 15px;
+    line-height: 24px;
+}
+
+.team-discription{
+    background-color:#f5f5f5;
+
+}
+
+.team-social-network{
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.team-social-network a{
+    margin: 0 6px;
+}
+
+.team-social-network i{
+    height: 40px;
+    width: 40px;
+    background: white;
+    text-align: center;
+    color: deepskyblue;
+    border-radius: 50%;
+    border: 3px solid #c4e5f0;
+    padding-top: 10px;
+}
+
+.team-block{
+    text-align: center;
+    position: relative;
+}
+/*--WE WORK ON THE HOVER OF THE TEAM DESCRIPTION--*/
+
+.team-block:hover  .team-discription{
+    background-color: deepskyblue;
+    color: white;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+}
+/*--FOR  THE COLOR OF THE TITLE AND SPAN AFTER HOVER TAKE PLACE--*/
+
+.team-block:hover .team-title h3,
+.team-block:hover .team-title span{
+  color:white;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
+  -moz-transition: 0.4s ease;
+  -o-transition: 0.4s ease;
+  -ms-transition: 0.4s ease;
+}
+
+.team-block:hover .team-discription p{
+    color:#f9f9f9;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 05s ease;
+    -o-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+}
+/*--FOR TEAM SOCIAL NETWORK ICONS--*/
+
+.team-block:hover .team-social-network i{
+    border-color: white;
+    background: deepskyblue;
+    color:white;
+    transition: 0.7s ease;
+    -webkit-transition: 0.7s ease;
+    -moz-transition: 0.7s ease;
+    -o-transition: 0.7s ease;
+    -ms-transition: 0.7s ease;
+}
+
+.download  h2{
+    text-align: center;
+    color: white;
+}
+ .title,  .sub-heading  p{
+     text-align: center;
+     color: white;
+ }
+
+ .download{
+     background-image:linear-gradient(rgba(0, 0, 0, 0.342),rgba(0, 0, 0, 0.336)), url(..//image/phil.jpg);
+     background-size: cover;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     -ms-background-size: cover;
+     background-attachment: fixed;
+
+ }
+
+ .download .default-btn{
+     background: transparent;
+     border: 1px solid white;
+     color: white;
+     font-size: 20px;
+     padding: 8px 40px;
+     margin: 0 12px;
+     transition: 0.5s ease-in;
+ }
+
+ .download .default-btn:hover{
+     background:white;
+     color:deepskyblue;
+ }
+
+ .download .fa{
+     margin-right: 10px;
+ }
+ .downloadnow{
+     padding: 100px 0px;
+ }
+
+ /*--CONTACT PAGE--*/
+ .contact-area{
+     padding:100px 0px;
+ }
+
+ .contact-area .sub-heading p{
+     color: dimgray;
+ }
+ .divider{
+     border-right: 1px solid  #d9d9d9;
+ }
+
+ .contact-area h3{
+     text-transform: uppercase;
+     margin-bottom: 18px;
+     text-align: center;
+     color:deepskyblue;
+ }
+
+ .contact-area h4{
+     color: #3a3a3a;
+     font-weight: 700;
+     text-transform: capitalize;
+     margin-bottom: 4px;
+     letter-spacing: 0.025em;
+
+ }
+
+ .contact-area  span{
+     display: block;
+     color: #3a3a3a;
+     font-size: 12px;
+     line-height: normal;
+     letter-spacing: 0.025em;
+
+ }
+
+ .contact-area ul li{
+     overflow: hidden;
+     margin-bottom: 25px;
+
+ }
+
+ .contact-area ul li:last-child{
+     margin-bottom: 0;
+ }
+
+ /*--FOR ICONS-*/
+ .contact-area ul li .fa{
+     float: left;
+     width: 25px;
+     color: deepskyblue;
+     font-size: 30px;
+ }
+
+ /*--TO BRING PHONE DOWN--*/
+ .contact-address ul li .address-phone{
+     float: left;
+     width: 190px;
+     padding-left: 25px;
+
+ }
+
+ .contact-block{
+     padding-left: 25px;
+
+ }
+
+ .contact-area .form-control, .contact-area textarea{
+     font-family: 'Roboto', sans-serif;
+     background-color: #f8fdff;
+     border-left: 1px solid #a5d3eb;
+     padding: 10px 12px;
+     color: #bdbdbd;
+     font-weight: 400;
+     border-radius: 0;
+
+ }
+
+ .contact-area .form-group{
+     margin-bottom: 50px;
+ }
+
+ .contact-area textarea{
+     min-height: 115px;
+ }
+
+ .contact-area .default-btn{
+     padding: 10px;
+ }
